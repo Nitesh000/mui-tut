@@ -12,8 +12,25 @@
 // import { MuiButton } from "./components/MuiButton";
 // import { MuiTextField } from "./components/MuiTextField";
 // import { MuiTypography } from "./components/MuiTypography";
+import { colors, createTheme, ThemeProvider } from "@mui/material";
+import { MuiLoadingButton } from "./components/MiLoadingButton";
 
-import { MuiList } from "./components/MuiList";
+// import { MuiSkeleton } from "./components/MuiSkeleton";
+
+// import { MuiDialog } from "./components/MuiDialog";
+// import { MuiProgress } from "./components/MuiProgress";
+
+// import { MuiSnackbar } from "./components/MuiSnackbar";
+
+// import { MuiAlert } from "./components/MuiAlert";
+
+// import { MuiTable } from "./components/MuiTable";
+
+// import { MuiTooltip } from "./components/MuiTooltip";
+
+// import { MuiChip } from "./components/MuiChip";
+
+// import { MuiList } from "./components/MuiList";
 
 // import { MuiAvatar } from "./components/MuiAvatar";
 // import { MuiBadge } from "./components/MuiBadge";
@@ -26,32 +43,53 @@ import { MuiList } from "./components/MuiList";
 // import MuiBreadcrumbs from "./components/MuiBreadcrumbs";
 
 // import { MuiLink } from "./components/MuiLink";
+const theme = createTheme({
+  status: {
+    danger: colors.orange[500],
+  },
+  palette: {
+    secondary: {
+      main: colors.orange[500],
+    },
+  },
+});
 
 function App() {
   return (
     <div>
-      {/* <MuiTypography /> */}
-      {/* <MuiButton /> */}
-      {/* <MuiTextField /> */}
-      {/* <MuiSelect /> */}
-      {/* <MuiRadioButton /> */}
-      {/* <MuiCheckbox /> */}
-      {/* <MuiSwitch /> */}
-      {/* <MuiRating /> */}
-      {/* <MuiAutocomplete /> */}
-      {/* <MuiLayout /> */}
-      {/* <MuiCard /> */}
-      {/* <MuiAccordion /> */}
-      {/* <MuiImageList /> */}
-      {/* <MuiNavbar /> */}
-      {/* <MuiLink /> */}
-      {/* <MuiBreadcrumbs /> */}
-      {/* <MuiDrawer /> */}
-      {/* <MuiSpeeddial /> */}
-      {/* <MuiBottomNavigation /> */}
-      {/* <MuiAvatar /> */}
-      {/* <MuiBadge /> */}
-      <MuiList />
+      <ThemeProvider theme={theme}>
+        {/* <MuiTypography /> */}
+        {/* <MuiButton /> */}
+        {/* <MuiTextField /> */}
+        {/* <MuiSelect /> */}
+        {/* <MuiRadioButton /> */}
+        {/* <MuiCheckbox /> */}
+        {/* <MuiSwitch /> */}
+        {/* <MuiRating /> */}
+        {/* <MuiAutocomplete /> */}
+        {/* <MuiLayout /> */}
+        {/* <MuiCard /> */}
+        {/* <MuiAccordion /> */}
+        {/* <MuiImageList /> */}
+        {/* <MuiNavbar /> */}
+        {/* <MuiLink /> */}
+        {/* <MuiBreadcrumbs /> */}
+        {/* <MuiDrawer /> */}
+        {/* <MuiSpeeddial /> */}
+        {/* <MuiBottomNavigation /> */}
+        {/* <MuiAvatar /> */}
+        {/* <MuiBadge /> */}
+        {/* <MuiList /> */}
+        {/* <MuiChip /> */}
+        {/* <MuiTooltip /> */}
+        {/* <MuiTable /> */}
+        {/* <MuiAlert /> */}
+        {/* <MuiSnackbar /> */}
+        {/* <MuiDialog /> */}
+        {/* <MuiProgress /> */}
+        {/* <MuiSkeleton /> */}
+        <MuiLoadingButton />
+      </ThemeProvider>
     </div>
   );
 }
